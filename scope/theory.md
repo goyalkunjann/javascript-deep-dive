@@ -12,10 +12,10 @@ In simple terms, scope determines which parts of code can access a variable.
 
 ## Why Scope is Important
 
-* Controls variable accessibility
-* Prevents naming conflicts
-* Helps write predictable and maintainable code
-* Foundation for closures and execution context
+- Controls variable accessibility  
+- Prevents naming conflicts  
+- Helps write predictable and maintainable code  
+- Foundation for closures and execution context  
 
 ---
 
@@ -37,9 +37,9 @@ function test() {
 
 ### Key Points
 
-* Accessible throughout the program
-* Stored in the global object (window in browser)
-* Overuse can lead to conflicts
+- Accessible throughout the program  
+- Stored in the global object (window in browser)  
+- Overuse can lead to conflicts  
 
 ---
 
@@ -58,9 +58,9 @@ test();
 
 ### Key Points
 
-* `var` is function scoped
-* Not accessible outside the function
-* Each function creates its own scope
+- `var` is function scoped  
+- Not accessible outside the function  
+- Each function creates its own scope  
 
 ---
 
@@ -77,19 +77,19 @@ Variables declared using `let` and `const` inside `{}` are block scoped.
 
 ### Key Points
 
-* Introduced in ES6
-* Accessible only within the block
-* Safer than `var`
+- Introduced in ES6  
+- Accessible only within the block  
+- Safer than `var`  
 
 ---
 
 # var vs let vs const (Scope Perspective)
 
 | Keyword | Scope Type | Re-declare | Re-assign |
-| ------- | ---------- | ---------- | --------- |
-| var     | Function   | Yes        | Yes       |
-| let     | Block      | No         | Yes       |
-| const   | Block      | No         | No        |
+|--------|-----------|-----------|-----------|
+| var    | Function  | Yes       | Yes       |
+| let    | Block     | No        | Yes       |
+| const  | Block     | No        | No        |
 
 ---
 
@@ -113,9 +113,9 @@ outer()(); // 10
 
 ### Key Points
 
-* Also called static scope
-* Defined at code writing time
-* Used in closures
+- Also called static scope  
+- Defined at code writing time  
+- Used in closures  
 
 ---
 
@@ -141,9 +141,9 @@ outer();
 
 ### Key Points
 
-* Lookup happens upward
-* Stops at global scope
-* If not found, results in ReferenceError
+- Lookup happens upward  
+- Stops at global scope  
+- If not found → ReferenceError  
 
 ---
 
@@ -205,7 +205,7 @@ A new variable is created for each iteration.
 # Scope vs Execution Context
 
 | Scope                                  | Execution Context         |
-| -------------------------------------- | ------------------------- |
+|---------------------------------------|---------------------------|
 | Defines where variables are accessible | Defines how code executes |
 | Static concept                         | Runtime concept           |
 
@@ -213,10 +213,10 @@ A new variable is created for each iteration.
 
 # Key Takeaways
 
-* Scope defines variable accessibility
-* `var` is function scoped
-* `let` and `const` are block scoped
-* JavaScript follows lexical scoping
-* Scope chain is used for variable lookup
-* Shadowing can override variables
-* Loop behavior differs for `var` and `let`
+- Scope defines variable accessibility  
+- `var` is function scoped  
+- `let` and `const` are block scoped  
+- JavaScript follows lexical scoping  
+- Scope chain is used for variable lookup  
+- Shadowing can override variables  
+- Loop behavior differs for `var` and `let`
